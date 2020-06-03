@@ -29,15 +29,18 @@ REQUIREMENTS
 
 * JRuby >= 1.7.0
 * javac
-* Rake
+* Rake == 10.5.0
 
 INSTALL
 -------
 
-    sudo gem install rawr --source http://gems.neurogami.com
+```
+$ ./jruby.sh -S gem install bundler
+$ ./bundle.sh install --path=vendor/bundle --binstubs
+$ ./bundle.sh exec bin/rake -f Rakefile
+```
 
 Note: You probably do not want to use `sudo` if you are using a Ruby installed using `rvm` or something similar.
-
 
 KNOWN PROBLEMS
 --------------

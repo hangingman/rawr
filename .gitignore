@@ -1,5 +1,7 @@
 .idea
-pkg/*
+pkg/
+vendor/
+build/
 nbproject
 .DS_Store
 META-INF

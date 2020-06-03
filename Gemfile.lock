@@ -1,0 +1,37 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    bones (3.8.0)
+      little-plugger (~> 1.1.3)
+      loquacious (~> 1.9.1)
+      rake (>= 0.8.7)
+    builder (3.2.4)
+    hoe (3.22.1)
+      rake (>= 0.8, < 15.0)
+    little-plugger (1.1.4)
+    loquacious (1.9.1)
+    rake (10.5.0)
+    rspec (1.3.0)
+    rubyzip (2.3.0)
+    s4t-utils (1.0.4)
+      hoe (>= 1.3.0)
+    user-choices (1.1.6.1)
+      builder (>= 2.1.2)
+      s4t-utils (>= 1.0.3)
+      xml-simple (>= 1.0.11)
+    xml-simple (1.1.5)
+
+PLATFORMS
+  java
+
+DEPENDENCIES
+  bones (= 3.8.0)
+  builder (= 3.2.4)
+  hoe (= 3.22.1)
+  rake (= 10.5.0)
+  rspec (= 1.3.0)
+  rubyzip
+  user-choices
+
+BUNDLED WITH
+   2.1.4

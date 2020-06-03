@@ -1,6 +1,12 @@
 require 'rake'
 
 begin
+  Bundler.require
+rescue LoadError
+  abort '### Please install the "bundler" gem ###'
+end
+
+begin
   require 'bones'
 rescue LoadError
   abort '### Please install the "bones" gem ###'
