@@ -1,12 +1,6 @@
 require 'rake'
 
 begin
-  Bundler.require
-rescue LoadError
-  abort '### Please install the "bundler" gem ###'
-end
-
-begin
   require 'bones'
 rescue LoadError
   abort '### Please install the "bones" gem ###'
@@ -24,9 +18,10 @@ url  'http://github.com/rawr/rawr'
 version  Rawr::VERSION
 readme_file  'README.md'
 summary  "Rawr is a packaging and deployment solution for JRuby applications."
-rdoc_exclude  %w(.git launch4j lib/rawr/launch4j lib/rawr/templates )
+rdoc_exclude  %w(^\.git/  ^\.idea/ ^\.bundle/ vendor/ build/ launch4j lib/rawr/launch4j lib/rawr/templates )
 ruby_opts  []
-exclude %w{.rvmrc data/website .git}
+exclude %w(^\.git/  ^\.idea/ ^\.bundle/ vendor/ build/ data/website)
+
 libs << 'lib'
 gem.dependencies  %w{ user-choices rubyzip }
 gem.platform  "java"

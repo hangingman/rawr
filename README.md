@@ -40,7 +40,7 @@ $ ./bundle.sh install --path=vendor/bundle --binstubs
 $ ./bundle.sh exec bin/rake -f Rakefile
 ```
 
-Note: You probably do not want to use `sudo` if you are using a Ruby installed using `rvm` or something similar.
+Note: Remove pkg directory before executing rake
 
 KNOWN PROBLEMS
 --------------
